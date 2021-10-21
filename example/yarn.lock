@@ -1970,10 +1970,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next-router-query@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/next-router-query/-/next-router-query-0.1.1.tgz#c39c75ce2a4b504df26b60ef8bbcfa7e3fd54fc0"
-  integrity sha512-n4e8dvaE7p0+v7KUaSrgir5GS8CPIucmHjEset9jccrUhZ5zUq/oD3UD2Z0YEEQza6nvtj0Cv3Zx1vrOSX/ZuA==
+next-router-query@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.npmjs.org/next-router-query/-/next-router-query-0.1.3.tgz#bd29366cfc318f48344f95e60988f46c80c8b17a"
+  integrity sha512-IvIX+JWidA0MybYBMp7h/D3Ok0ZkgrK2j73spj+UJemq3on8LD3U4eDZQ1FPPulSp07y9qlx1VThac8b6SMb+w==
 
 next@11.1.2:
   version "11.1.2"
