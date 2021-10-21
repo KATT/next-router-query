@@ -1,4 +1,4 @@
-# `react-router-query`
+# `next-router-query`
 
 Drop-in alternative of `useRouter().query` that tries it's best to get the query params on the first mount.
 
