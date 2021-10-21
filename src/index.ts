@@ -8,7 +8,7 @@ export function useRouterQuery() {
   const router = useRouter();
 
   const { asPath, query, pathname } = router;
-  const value = useMemo(() => {
+  return useMemo(() => {
     // if we have query params from the router, let's return that
     if (Object.keys(query).length > 0) {
       return query;
@@ -57,6 +57,4 @@ export function useRouterQuery() {
     }
     return actualQuery;
   }, [asPath, query, pathname]);
-
-  return value;
 }
