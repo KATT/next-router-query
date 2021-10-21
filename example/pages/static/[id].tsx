@@ -18,6 +18,7 @@ export default function MyPage(
       <h1>Viewing ID#{id}</h1>
       <p>Data: {props.data || <em>Generating SSG-page for you</em>}</p>
 
+      <hr />
       <ShowDifference />
     </>
   );

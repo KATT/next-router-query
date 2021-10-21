@@ -11,7 +11,16 @@ export default function IndexPage() {
 
   return (
     <>
-      <ul>
+      <p>
+        Open the inspector &amp; navigate to a page below to see the difference
+        in results - the code can be viewed at{' '}
+        <a href="./example/components/ShowDifference.tsx">
+          <code>
+            github.com/KATT/next-router-query/example/components/ShowDifference.tsx
+          </code>
+        </a>
+      </p>
+      <ul style={{ fontSize: '1.25rem' }}>
         <li>
           <Link href="/post/myId">
             <a>
@@ -29,9 +38,10 @@ export default function IndexPage() {
             }}
           >
             <a>
-              <code>post/[id].tsx</code> with a <code>?search</code>-param
+              <code>post/[id].tsx</code>
             </a>
-          </Link>
+          </Link>{' '}
+          with a <code>?search</code>-param
         </li>
         <li>
           <Link href="/pokemon/gotta/catch/them/all">
@@ -43,10 +53,10 @@ export default function IndexPage() {
         <li>
           <Link href={`/static/${staticId}`}>
             <a>
-              <code>static/[id].tsx</code> - static page rendering with{' '}
-              <code>fallback: true</code>
+              <code>static/[id].tsx</code>
             </a>
-          </Link>
+          </Link>{' '}
+          - static page rendering with <code>fallback: true</code>
         </li>
       </ul>
     </>
