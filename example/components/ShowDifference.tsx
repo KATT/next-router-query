@@ -4,6 +4,9 @@ import { useRouterQuery } from 'next-router-query';
 export function ShowDifference() {
   const nativeQuery = useRouter().query;
   const myQuery = useRouterQuery();
+  if (!process.browser) {
+    return null;
+  }
 
   return (
     <div>
