@@ -28,6 +28,8 @@ Once the first render is done and `useRouter().query` returns data, we'll simply
 
 ## Caveats
 
+- This is an evening hack and is not production ready
+- Might cause hydration errors when using SSR
 - Relies on `URLSearchParams` - you might need some polyfill
 - Only works in the browser - server will not show the right result
 
