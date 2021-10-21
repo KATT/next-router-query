@@ -7,9 +7,6 @@ export function ShowDifference() {
   const myQuery = useRouterQuery();
   const renderCount = useRef(0);
   renderCount.current = renderCount.current + 1;
-  if (!process.browser) {
-    return null;
-  }
 
   console.log(`--------- Render #${renderCount.current}  --------`);
   console.log('useRouter().query result:', nativeQuery);
