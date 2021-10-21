@@ -13,7 +13,7 @@ export function ShowDifference() {
 
   console.log(`--------- Render #${renderCount.current}  --------`);
   console.log('useRouter().query result:', nativeQuery);
-  console.log('useRouterQuery().query result:', myQuery);
+  console.log('useRouterQuery() result:', myQuery);
   console.log(`--------- Render #${renderCount.current}  --------`);
 
   return (

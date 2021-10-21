@@ -21,7 +21,7 @@ With `next-router-query` you'll see the difference
 ```jsx
 --------- Render #1  --------
 useRouter().query result: {} // 😢 
-useRouterQuery().query result: {id: 'myId', key: 'value'} // 😻
+useRouterQuery() result: {id: 'myId', key: 'value'} // 😻
 ```
 
 Once the first render is done and `useRouter().query` returns data, we'll simply return that instead.
