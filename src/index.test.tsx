@@ -1,3 +1,6 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { useRouterQuery } from '.';
 jest.mock('next/router', () => ({
   useRouter() {
     return {
@@ -8,9 +11,6 @@ jest.mock('next/router', () => ({
     };
   },
 }));
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { useRouterQuery } from '.';
 
 jest.mock('next/dist/client/router', () => ({
   __esModule: true,

@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import { useRouter } from 'next/router';
 import { useMemo } from 'react';
 
