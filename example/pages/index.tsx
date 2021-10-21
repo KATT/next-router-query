@@ -1,6 +1,14 @@
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export default function IndexPage() {
+  const [staticId, setStaticId] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => setStaticId(Math.random()), 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <ul>
@@ -29,6 +37,14 @@ export default function IndexPage() {
           <Link href="/pokemon/gotta/catch/them/all">
             <a>
               <code>pokemon/[...all].tsx</code>
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href={`/static/${staticId}`}>
+            <a>
+              <code>static/[id].tsx</code> - static page rendering with{' '}
+              <code>fallback: true</code>
             </a>
           </Link>
         </li>
