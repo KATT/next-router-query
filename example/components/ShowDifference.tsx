@@ -1,17 +1,20 @@
 import { useRouter } from 'next/router';
 import { useRouterQuery } from 'next-router-query';
+import { useRef } from 'react';
 
 export function ShowDifference() {
   const nativeQuery = useRouter().query;
   const myQuery = useRouterQuery();
+  const renderCount = useRef(0);
+  renderCount.current = renderCount.current + 1;
   if (!process.browser) {
     return null;
   }
 
-  console.log({
-    'useRouter().query': nativeQuery,
-    'useRouterQuery()': myQuery,
-  });
+  console.log(`--------- Render #${renderCount.current}  --------`);
+  console.log('useRouter().query result:', nativeQuery);
+  console.log('useRouterQuery().query result:', myQuery);
+  console.log(`--------- Render #${renderCount.current}  --------`);
 
   return (
     <div>
